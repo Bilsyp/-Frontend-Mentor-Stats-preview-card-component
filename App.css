@@ -1,0 +1,133 @@
+@import url("https://fonts.google.com/specimen/Inter")
+@import url("https://fonts.google.com/specimen/Lexend+Deca")
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  ;
+  padding: 20px;
+}
+
+.container {
+  background: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+
+.img-card {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mix {
+  width: 100%;
+  position: absolute;
+  mix-blend-mode: multiply;
+  top: -4px;
+  left: 0;
+  height: 100%;
+  background: hsl(277, 64%, 61%);
+
+}
+
+img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: auto;
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.card-content h1 {
+  font-weight: 700;
+  font-family: "Inter",Sans-Serif;
+  padding-top: 15px;
+}
+
+.card-content span {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-content .p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Lexend Deca",Sans-Serif;
+  padding: 20px 10px;
+
+}
+
+.info {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  padding: 20px;
+}
+
+.info .item{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.info .item span {
+  display: block;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 1rem;
+  font-family: le;
+  font-weight: 400;
+  padding: 10px 0;
+  ;
+}
+
+@media(min-width:376px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  
+}
+img {
+  border-top-left-radius:0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius:10px ;
+}
+.img-card {
+  border-bottom-right-radius:10px ;
+  order: 2;
+}
+.card-content{
+  text-align: left;
+  padding: 20px 50px;
+}
+.card-content .p {
+  padding: 10px 0;
+}
+.info{
+  padding:2px 0;
+  justify-content:space-between;
+  flex-direction: row;
+}
+.mix {
+
+ top:0px;
+}
+
+}
